@@ -3,19 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.2.1",
+    "bootstrap": "^4.3.1",
+    "cowsay-browser": "^1.1.8",
     "next": "^9.0.3",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
     "react-scripts": "0.9.5",
-    "redu": "^1.0.1",
+    "reactstrap": "^8.0.1",
     "redux": "^4.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "next src -p 3001",
+    "build": "next build src -p 3001",
+    "start": "next start src -p 3001"
   }
 }
