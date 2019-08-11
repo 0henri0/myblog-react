@@ -8,7 +8,9 @@ module.exports = {
       1,
       "single"
     ],
-    "react/jsx-uses-react": 1,
+    "react/jsx-uses-react": 0,
+    "react/react-in-jsx-scope": 0,
+    
   },
   "extends": [
     // "eslint:recommended",

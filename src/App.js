@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { createStore } from 'redux'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { createStore } from 'redux';
 
 const store = createStore();
 console.log(store);
