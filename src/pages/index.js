@@ -6,9 +6,8 @@ class Index extends Component {
   cowsayHi = () => {
     return (
       <pre>{cowsay.say({ text: 'hi there!' })}</pre>
-    )
+    );
   }
-
   render() {
     return (
       <Fragment>

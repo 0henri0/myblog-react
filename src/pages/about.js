@@ -1,18 +1,22 @@
 import cowsay from 'cowsay-browser';
 import Layout from '../components/layouts/layout';
-import React, { Component, Fragment } from 'react';
+import { Component, Fragment } from 'react';
 
 class About extends Component {
   cowsayHi = () => {
     return (
-      <pre>{cowsay.say({ text: 'this is home' })}</pre>
-    )
+      <pre>{cowsay.say({ text: 'this is about' })}</pre>
+    );
+  };
+
+  xxx = () => {
+    return 'thai';
   }
 
   render() {
     return (
       <Fragment>
-        <Layout title='this is home'>
+        <Layout title='this is about'>
           {this.cowsayHi()}
         </Layout>
       </Fragment>

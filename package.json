@@ -5,26 +5,29 @@
   "dependencies": {
     "@material-ui/core": "^4.3.1",
     "@material-ui/icons": "^4.2.1",
+    "@zeit/next-css": "^1.0.1",
     "bootstrap": "^4.3.1",
     "cowsay-browser": "^1.1.8",
-    "next": "^9.0.3",
+    "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
     "react-scripts": "0.9.5",
     "reactstrap": "^8.0.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "next": "^9.0.3"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.2",
     "redux-devtools": "^3.5.0"
   },
   "scripts": {
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev": "next src -p 3001",
-    "build": "next build src -p 3001",
-    "start": "next start src -p 3001",
+    "build": "next build src",
+    "start": "next start src",
     "eslint": "eslint ./src --fix"
   }
 }

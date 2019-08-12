@@ -1,16 +1,24 @@
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/display-name */
 import Head from './head';
 import Header from './header';
 import Footer from './footer';
 import { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default ({ children, title = 'This is the default title' }) => (
+const Layout = ({ children, title = 'This is the default title' }) => (
   <Fragment>
-    <Head title = {title}/>
+    <Head title={title} />
     <Header />
+    <div className="container h-100">
     {children}
+    </div>
     <Footer />
   </Fragment>
 );
+
+Layout.propTypes = {
+  children: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default Layout;

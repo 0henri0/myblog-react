@@ -1,23 +1,17 @@
 import cowsay from 'cowsay-browser';
 import Layout from '../components/layouts/layout';
-import React, { Component, Fragment } from 'react';
 
-class Contact extends Component {
-  cowsayHi = () => {
-    return (
-      <pre>{cowsay.say({ text: 'this is Contact' })}</pre>
-    )
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <Layout title='this is Contact'>
-          {this.cowsayHi()}
-        </Layout>
-      </Fragment>
-    );
-  }
+const cowsayHi = () => {
+  return (
+    <pre>{cowsay.say({ text: 'this is Contact' })}</pre>
+  );
+}
+const Contact = () => {
+  return (
+    <Layout title='this is Contact'>
+      {cowsayHi()}
+    </Layout>
+  );
 }
 
 export default Contact;
