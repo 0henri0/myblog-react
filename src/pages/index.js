@@ -38,7 +38,7 @@ class Index extends Component {
 const mapStateToProps = state => {
   return {
     moments: state.momments.items
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps)(Index);

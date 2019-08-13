@@ -10,7 +10,7 @@ export default function (state = initinalState, action) {
       return {
         ...state,
         ...{ moments: action.payload }
-      }
+      };
 
     default:
       return state;

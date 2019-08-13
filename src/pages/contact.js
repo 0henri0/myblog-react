@@ -5,13 +5,13 @@ const cowsayHi = () => {
   return (
     <pre>{cowsay.say({ text: 'this is Contact' })}</pre>
   );
-}
+};
 const Contact = () => {
   return (
     <Layout title='this is Contact'>
       {cowsayHi()}
     </Layout>
   );
-}
+};
 
 export default Contact;
