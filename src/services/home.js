@@ -1,5 +1,6 @@
 import Http from './../utils/Http';
 
-export default getMoments() {
+export default function getMoments() {
     return new Http().get('/api/home');
 }
+

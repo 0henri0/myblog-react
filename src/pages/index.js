@@ -1,6 +1,7 @@
 import Layout from '../components/layouts/layout';
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
+import getMoments from '../services/home';
 
 class Index extends Component {
   constructor(props) {
@@ -11,11 +12,11 @@ class Index extends Component {
     };
   }
 
-  componentDidMount() {
+  UNSAFE_componentWillMount() {
     getMoments()
       .then(res => {
         this.setState({
-          momments: res.data.momments,
+          momments: res.data.mommetsArray,
         });
       })
       .catch(error => {
