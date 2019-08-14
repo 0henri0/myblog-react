@@ -1,12 +1,13 @@
 import Layout from '../components/layouts/layout';
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import getMoments from '../services/home';
+import Banner from '../components/home/banner';
+import BlogArea from '../components/commons/blogArea';
 
 class Index extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       momments: {}
     };
@@ -20,18 +21,16 @@ class Index extends Component {
         });
       })
       .catch(error => {
-        return Promise.reject(error);
+        return error;
       });
   }
 
   render() {
-    console.log(this.state);
     return (
-      <Fragment>
-        <Layout title='this is home'>
-
-        </Layout>
-      </Fragment>
+      <Layout title='this is home' isActived = 'active'>
+          <Banner />
+          <BlogArea />
+      </Layout>
     );
   }
 }

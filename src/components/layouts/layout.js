@@ -3,14 +3,15 @@ import Header from './header';
 import Footer from './footer';
 import { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../static/app';
 
-const Layout = ({ children, title = 'This is the default title' }) => (
+const Layout = ({ children, title = 'This is the default title', isActived = '' }) => (
   <Fragment>
     <Head title={title} />
-    <Header />
-    <div className="container h-100">
-    {children}
+    <Header isActived={isActived}/>
+    <div className='main'>
+      {children}
     </div>
     <Footer />
   </Fragment>
