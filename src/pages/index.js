@@ -27,7 +27,7 @@ class Index extends Component {
 
   render() {
     return (
-      <Layout title='this is home' isActived = 'active'>
+      <Layout title='this is home'>
           <Banner />
           <BlogArea />
       </Layout>

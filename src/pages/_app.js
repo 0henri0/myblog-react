@@ -5,6 +5,7 @@ import Store from '../redux/store';
 
 class MyApp extends App {
   render() {
+    console.log(this.props);
     const store = Store();
     const { Component, pageProps } = this.props;
     return (

@@ -6,10 +6,10 @@ import PropTypes from 'prop-types';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../static/app';
 
-const Layout = ({ children, title = 'This is the default title', isActived = '' }) => (
+const Layout = ({ children, title = 'This is the default title' }) => (
   <Fragment>
     <Head title={title} />
-    <Header isActived={isActived}/>
+    <Header/>
     <div className='main'>
       {children}
     </div>
