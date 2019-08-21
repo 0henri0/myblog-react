@@ -15,7 +15,7 @@ const blogArea = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default blogArea;

@@ -113,7 +113,7 @@ const blogRightSiderbar = () => {
         </ul>
       </aside>
     </div>
-  )
-}
+  );
+};
 
 export default blogRightSiderbar;

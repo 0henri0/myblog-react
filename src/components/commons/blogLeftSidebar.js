@@ -179,7 +179,7 @@ const blogLeftSiderbar = () => {
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
 export default blogLeftSiderbar;

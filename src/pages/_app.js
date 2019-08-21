@@ -2,10 +2,10 @@ import React from 'react';
 import App from 'next/app';
 import { Provider } from 'react-redux';
 import Store from '../redux/store';
+import  'bootstrap/dist/css/bootstrap.min.css';
 
 class MyApp extends App {
   render() {
-    console.log(this.props);
     const store = Store();
     const { Component, pageProps } = this.props;
     return (

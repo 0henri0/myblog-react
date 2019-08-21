@@ -16,7 +16,7 @@ const banner = () =>{
             </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default banner;
