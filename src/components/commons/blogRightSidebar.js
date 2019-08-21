@@ -7,7 +7,7 @@ const blogRightSiderbar = () => {
           <span className="input-group-btn">
             <button className="btn btn-default" type="button"><i className="lnr lnr-magnifier" /></button>
           </span>
-        </div>{/* /input-group */}
+        </div>
         <div className="br" />
       </aside>
       <aside className="single_sidebar_widget author_widget">

@@ -1,18 +1,11 @@
-import BlogLeftSidebar from './blogLeftSidebar';
-import BlogRightSidebar from './blogRightSidebar';
 
-const blogArea = () => {
+
+const blogArea = ({ children }) => {
   return (
-    <section className="blog_area p_120">
+    <section className="blog_area p_100">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-8">
-            <BlogLeftSidebar />
-          </div>
-          <div className="col-lg-4">
-            <BlogRightSidebar />
-          </div>
-        </div>
+        
+        { children }
       </div>
     </section>
   );

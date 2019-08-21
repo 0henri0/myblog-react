@@ -4,10 +4,6 @@ import ActiveLink from '../commons/activeLink';
 import { Navbar, Nav } from 'react-bootstrap';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { 'urlCurrent': null };
-  }
   render() {
     return (
       <header className="header_area">
@@ -23,16 +19,15 @@ class Header extends React.Component {
                   <ActiveLink href="/contact">Contact</ActiveLink>
                 </Nav>
               </Navbar.Collapse>
-            </div>
-            <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-              <ul className="nav navbar-nav menu_nav">
-              </ul>
-              <ul className="nav navbar-nav navbar-right header_social ml-auto">
-                <li className="nav-item"><a href="#"><i className="fa fa-facebook" /></a></li>
-                <li className="nav-item"><a href="#"><i className="fa fa-twitter" /></a></li>
-                <li className="nav-item"><a href="#"><i className="fa fa-dribbble" /></a></li>
-                <li className="nav-item"><a href="#"><i className="fa fa-behance" /></a></li>
-              </ul>
+              <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
+                <ul className="nav navbar-nav menu_nav">
+                </ul>
+                <ul className="nav navbar-nav navbar-right header_social ml-auto">
+                  <li className="nav-item"><a href="https://www.facebook.com/Thaii1612" target='_blank'><i className="fa fa-facebook" /></a></li>
+                  <li className="nav-item"><a href="https://www.youtube.com/watch?v=iDPso7C0vy4&list=PL4pGmis-Dgye_qjaaCeR0VOltmWSoBdSF" target='_blank'><i className="fa fa-youtube" /></a></li>
+                  <li className="nav-item"><a href="https://github.com/0henri0" target='_blank'><i className="fa fa-github" /></a></li>
+                </ul>
+              </div>
             </div>
           </Navbar>
         </div>
@@ -42,17 +37,6 @@ class Header extends React.Component {
           </div>
         </div>
       </header>
-      // <div className="main_menu">
-      //   <nav className="navbar navbar-expand-lg navbar-light">
-      //     <div className="container box_1620">
-      //       
-      //       
-      //       
-      //     </div>
-      //   </nav>
-      // </div>
-      //
-
     );
   }
 }

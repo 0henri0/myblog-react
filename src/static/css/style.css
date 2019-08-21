@@ -69,9 +69,13 @@ a:hover, a:focus {
 body {
   line-height: 26px;
   font-size: 16px;
-  font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", monospace !important;
   font-weight: normal;
   color: #777777;
+}
+
+.main{
+  background-color: #FAFAFA !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -926,7 +930,7 @@ button:focus {
 .blog_right_sidebar {
   border: 1px solid #e9e9e9;
   padding: 30px;
-  background: #f9f9ff;
+  background: #fff;
 }
 
 .blog_right_sidebar .widget_title {
@@ -3718,6 +3722,98 @@ h6 {
 }
 
 .blog_style1.small .blog_text .blog_text_inner h4 {
+  font-size: 24px;
+  line-height: 26px;
+  padding-right: 0px;
+}
+
+.blog_style_2108 {
+  margin-bottom: 40px;
+}
+
+.blog_style_2108 .blog_text {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner {
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner .cat {
+  margin-bottom: 25px;
+  margin-left: -25px;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner .cat .cat_btn {
+  background: #f9f9ff;
+  color: #000;
+  border: 1px solid #e9e9e9;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner h4 {
+  font-size: 24px;
+  font-family: "Inconsolata", monospace;
+  line-height: 30px;
+  color: #000;
+  padding-right: 20px;
+  margin-bottom: 17px;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner h4:hover {
+  color: #6f6fff;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner p {
+  color: #777777;
+  margin-bottom: 22px;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner .date a {
+  color: #777777;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Inconsolata", monospace;
+  margin-right: 25px;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner .date a:hover {
+  color: #6f6fff;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner .date a i {
+  padding-right: 5px;
+}
+
+.blog_style_2108 .blog_text .blog_text_inner .date a:last-child {
+  margin-right: 0px;
+}
+
+.blog_style_2108.small .blog_text .blog_text_inner {
+  margin-top: -100px;
+}
+
+.blog_style_2108.small .blog_text .blog_text_inner .cat .cat_btn {
+  display: block;
+  width: 86px;
+  margin-bottom: 12px;
+}
+
+.blog_style_2108.small .blog_text .blog_text_inner h4 {
   font-size: 24px;
   line-height: 26px;
   padding-right: 0px;
