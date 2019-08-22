@@ -59,7 +59,7 @@ const blogRightSiderbar = () => {
         <h4 className="widget_title">Newsletter</h4>
         <div className="form-group d-flex flex-row">
           <div className="input-group">
-            <input type="text" className="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" />
+            <input type="text" className="form-control" id="inlineFormInputGroup" placeholder="Enter email" />
           </div>
           <a href="#" className="bbtns"><i className="lnr lnr-arrow-right" /></a>
         </div>

@@ -16,7 +16,7 @@ const Moment = () => {
             </div>
           </div>
         </article>
-    )
-}
+    );
+};
 
 export default Moment;

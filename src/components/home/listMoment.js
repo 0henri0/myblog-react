@@ -1,4 +1,4 @@
-import Moment from "./moment";
+import Moment from './moment';
 const ListMomment = () => {
   return (
     <div className="blog_left_sidebar">

@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import React from 'react';
 import ActiveLink from '../commons/activeLink';
 import { Navbar, Nav } from 'react-bootstrap';
 
-class Header extends React.Component {
-  render() {
+const Header = () => {
     return (
       <header className="header_area">
         <div className="main_menu">
@@ -15,6 +13,7 @@ class Header extends React.Component {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                   <ActiveLink href="/">Home</ActiveLink>
+                  <ActiveLink href="/imagegallary">ImageGallary</ActiveLink>
                   <ActiveLink href="/about">About</ActiveLink>
                   <ActiveLink href="/contact">Contact</ActiveLink>
                 </Nav>
@@ -38,7 +37,6 @@ class Header extends React.Component {
         </div>
       </header>
     );
-  }
-}
+};
 
 export default Header;

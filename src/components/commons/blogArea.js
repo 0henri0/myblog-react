@@ -1,10 +1,9 @@
 
 
-const blogArea = ({ children }) => {
+const blogArea = ({ children, p = 'p_100' }) => {
   return (
-    <section className="blog_area p_100">
+    <section className={`blog_area ${p}`}>
       <div className="container">
-        
         { children }
       </div>
     </section>
