@@ -1,8 +1,7 @@
-const ImageGallary = ({ src }) => {
+const ImageGallary = ({ src, onClick }) => {
   return (
-    <div class=' col-lg-4 col-md-6 col-xs-12 d-flex justify-content-center'>
+    <div className=' col-lg-4 col-md-6 col-xs-12 d-flex justify-content-center' onClick={onClick}>
       <img className ="single-gallery-image" src={ src } style = {{ width: '350px', height: '250px'}}/>
-      {/* <a href={ href } className="img-gal"><div className="single-gallery-image" style={{ backgroundImage: `url(${href})` }}></div></a> */}
     </div>
   );
 };

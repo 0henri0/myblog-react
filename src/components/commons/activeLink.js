@@ -4,7 +4,7 @@ export default function ActiveLink({ children, href }) {
   const router = useRouter();
   const style = {
     color: router.pathname === href ? 'red' : 'black',
-    'margin-right': '10px',
+    'marginRight': '10px',
   };
   const handleClick = e => {
     e.preventDefault();
