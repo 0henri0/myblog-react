@@ -28,18 +28,19 @@ class Index extends React.Component {
   }
 
   render() {
+    const { momments } = this.state;
     return (
       <Layout title='This Is Home'>
         <BlogArea>
           <div className="row">
             <div className="col-lg-8">
-              <ListMoment />
+              <ListMoment momments={momments} />
             </div>
             <div className="col-lg-4">
               <BlogRightSidebar />
             </div>
           </div>
-        <Pagination />
+          <Pagination />
         </BlogArea>
       </Layout>
     );

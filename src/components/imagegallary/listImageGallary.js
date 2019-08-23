@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ImageGallary from './imageGallary';
 import Carousel, { ModalGateway, Modal } from 'react-images';
 
@@ -23,55 +23,39 @@ class ListImageGallary extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalIsOpen: false
+      modalIsOpen: false,
+      selectedIndex: 0
     };
   }
-  toggleModal = () => {
-    this.setState({ modalIsOpen: !this.state.modalIsOpen });
+  toggleModal = (index) => {
+    this.setState({ modalIsOpen: !this.state.modalIsOpen, selectedIndex: index });
   }
   render() {
+    const { selectedIndex } = this.state;
     return (
       <div className="section-top-border">
-        <h3 className="title_color" style={{ textAlign: "center" }}>Image Gallery</h3>
+        <h3 className="title_color" style={{ textAlign: 'center' }}>Image Gallery</h3>
         <div className="row gallery-item">
           {images.map((image, index) => {
-            return <ImageGallary key={index} src={image.src} onClick={this.toggleModal} />
+            return <ImageGallary key={index} src={image.src} onClick={() => this.toggleModal(index)} />;
           })}
 
           <ModalGateway>
             {this.state.modalIsOpen ? (
               <Modal onClose={this.toggleModal}
-                allowFullscreen={false}
                 styles={{
                   blanket: base => ({
                     ...base,
-                    backgroundColor: 'rgba(255,255,255,0.85)',
                   }),
                   dialog: base => ({
                     ...base,
-                    width: 800,
+                    maxWidth: "100%",
                   }),
                 }}>
                 <Carousel views={images}
+                  currentIndex={selectedIndex}
                   styles={{
-                    footer: base => ({
-                      ...base,
-                      background: 'none !important',
-                      color: '#666',
-                      padding: 0,
-                      paddingTop: 20,
-                      position: 'static',
-                      '& a': {
-                        color: 'black',
-                      },
-                    }),
-                    header: base => ({
-                      ...base,
-                      background: 'none !important',
-                      padding: 0,
-                      paddingBottom: 10,
-                      position: 'static',
-                    }),
+
                     headerClose: base => ({
                       ...base,
                       color: '#666',

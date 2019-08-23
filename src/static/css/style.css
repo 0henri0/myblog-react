@@ -80,6 +80,10 @@ body {
   color: #777777;
 }
 
+body a {
+  text-decoration: none !important;
+}
+
 .main {
   min-height: 434px;
   background-color: #FAFAFA !important;
@@ -479,9 +483,16 @@ button:focus {
   font-family: "Inconsolata", monospace;
 }
 
+.blog_text .cat .cat_btn:hover {
+  background: #6f6fff !important;
+  color: #fff !important;
+  border-color: #6f6fff !important;
+}
+
 .blog_text .cat a {
   color: #777777;
   margin-right: 15px;
+  text-decoration: none;
 }
 
 .blog_text .cat a i {
@@ -1651,6 +1662,12 @@ button:focus {
 }
 
 /*============ End Blog Single Styles  =============*/
+.main_blog_details {
+  background-color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
 .main_blog_details h4 {
   font-size: 36px;
   font-weight: bold;
@@ -1721,7 +1738,7 @@ button:focus {
 }
 
 .main_blog_details p {
-  font-size: 14px;
+  font-size: 17px;
   color: #777777;
   margin-bottom: 15px;
 }
@@ -3663,7 +3680,6 @@ h6 {
   background: #6f6fff;
   color: #fff;
   border-color: #6f6fff;
-  text-decoration: none !important;
 }
 
 /* End Main Button Area css
@@ -4026,13 +4042,14 @@ h6 {
   margin-right: 0px;
 }
 
-.react-images__view-image {
-  height: 85vh !important;
-  width: auto !important;
+.react-images__view--isModal img {
+  height: 70vh;
+  width: auto;
 }
 
-.css-8wgz7g {
-  color: red
+.react-images__view-image--isFullscreen {
+  height: 100vh !important;
+  width: auto !important;
 }
 
 .blog_img img {

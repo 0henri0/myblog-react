@@ -1,7 +1,30 @@
-const Pagination = () => {
+import React, { useState } from 'react';
+import Pagination from "react-js-pagination";
+
+
+const PaginationComponent = () => {
+  const [totalItemsCount, setTotalItemsCount] = useState(10);
+
+  const handlePageChange = (pages) => {
+    console.log(pages)
+    setTotalItemsCount(totalItemsCount + 5)
+  }
+
   return (
     <nav className="blog-pagination justify-content-center d-flex">
-      <ul className="pagination">
+      <Pagination
+        activePage
+        hideDisabled
+        hideFirstLastPages
+        totalItemsCount={totalItemsCount}
+        itemsCountPerPage={5}
+        pageRangeDisplayed={5}
+        itemClass='page-item'
+        linkClass='page-link'
+        onChange={handlePageChange}
+
+      />
+      {/* <ul className="pagination">
         <li className="page-item">
           <a href="#" className="page-link" aria-label="Previous">
             <span aria-hidden="true">
@@ -21,9 +44,9 @@ const Pagination = () => {
             </span>
           </a>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 };
 
-export default Pagination;
+export default PaginationComponent;
