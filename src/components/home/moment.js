@@ -1,8 +1,8 @@
-const Moment = () => {
+const Moment = ({src}) => {
     return(
         <article className="blog_style_2108">
           <div className="blog_img">
-            <img className="img-fluid" src="/static/img/home-blog/blog-1.jpg" alt="" />
+            <img className="img-fluid" src={src} alt="" />
           </div>
           <div className="blog_text">
             <div className="blog_text_inner">

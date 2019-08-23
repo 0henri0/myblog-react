@@ -34,26 +34,10 @@ class ListImageGallary extends React.Component {
       <div className="section-top-border">
         <h3 className="title_color" style={{ textAlign: "center" }}>Image Gallery</h3>
         <div className="row gallery-item">
-          {images.map}
-          <ImageGallary src='static/img/imagegallary/1.jpg' />
-          <ImageGallary src='static/img/imagegallary/2.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/imagegallary/3.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/elements/g2.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/imagegallary/5.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/elements/g5.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/imagegallary/2.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/imagegallary/3.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/imagegallary/4.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/elements/g2.jpg' onClick={this.toggleModal} />
-          <ImageGallary src='static/img/imagegallary/5.jpg' />
-          <ImageGallary src='static/img/elements/g2.jpg' />
-          <ImageGallary src='static/img/imagegallary/5.jpg' />
-          <ImageGallary src='static/img/elements/g3.jpg' />
-          <ImageGallary src='static/img/imagegallary/5.jpg' />
-          <ImageGallary src='static/img/imagegallary/5.jpg' />
-          <ImageGallary src='static/img/elements/g1.jpg' />
-          <ImageGallary src='static/img/imagegallary/5.jpg' />
-          <ImageGallary src='static/img/imagegallary/5.jpg' />
+          {images.map((image, index) => {
+            return <ImageGallary key={index} src={image.src} onClick={this.toggleModal} />
+          })}
+
           <ModalGateway>
             {this.state.modalIsOpen ? (
               <Modal onClose={this.toggleModal}
