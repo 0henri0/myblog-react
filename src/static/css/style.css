@@ -4044,7 +4044,7 @@ h6 {
 
 .react-images__view--isModal img {
   height: 70vh;
-  width: auto;
+  width: auto !important;
 }
 
 .react-images__view-image--isFullscreen {
@@ -4054,4 +4054,36 @@ h6 {
 
 .blog_img img {
   width: 100% !important;
+}
+
+@media (max-width: 992px) {
+  .react-images__view--isModal img {
+    height: 55vh;
+    width: auto !important;
+  }
+
+  .react-images__view-image--isFullscreen {
+    height: 100vh !important;
+    width: auto !important;
+  }
+
+  .blog_img img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .react-images__view--isModal img {
+    height: 40vh;
+    width: auto !important;
+  }
+
+  .react-images__view-image--isFullscreen {
+    height: auto !important;
+    width: 100vw !important;
+  }
+
+  .blog_img img {
+    width: 100% !important;
+  }
 }

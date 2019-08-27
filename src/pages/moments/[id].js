@@ -7,7 +7,7 @@ const MomentDetail = () => {
         <Layout title='this is MomentDetail'>
             <BlogArea p='p_100'>
             <div className="row  d-flex justify-content-center">
-            <div className="col-10">
+            <div className="col-lg-9 col-md-12">
               <MomentDetailComponent />
             </div>
           </div>
