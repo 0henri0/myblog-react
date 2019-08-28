@@ -1,16 +1,27 @@
 const withCSS = require('@zeit/next-css');
+
 /* Without CSS Modules, with PostCSS */
-module.exports = withCSS();
+// module.exports = withCSS();
 
-/* With CSS Modules */
-// module.exports = withCSS({ cssModules: true })
+require('dotenv').config()
 
-/* With additional configuration on top of CSS Modules */
-/*
+const path = require('path')
+const Dotenv = require('dotenv-webpack')
+
 module.exports = withCSS({
-  cssModules: true,
-  webpack: function (config) {
-    return config;
+  webpack: config => {
+    config.plugins = config.plugins || []
+
+    config.plugins = [
+      ...config.plugins,
+
+      // Read the .env file
+      new Dotenv({
+        path: path.join(__dirname, '.env'),
+        systemvars: true
+      })
+    ]
+
+    return config
   }
-});
-*/
+})
