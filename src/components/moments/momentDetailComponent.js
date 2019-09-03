@@ -183,13 +183,13 @@ const MomentDetailComponent = () => {
             <input type="text" className="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'" />
           </div>
           <div className="form-group">
-            <textarea className="form-control mb-10" rows={5} name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required defaultValue={""} />
+            <textarea className="form-control mb-10" rows={5} name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required defaultValue={''} />
           </div>
           <a href="#" className="primary-btn submit_btn">Post Comment</a>
         </form>
       </div>
     </Fragment>
-  )
-}
+  );
+};
 
 export default MomentDetailComponent;

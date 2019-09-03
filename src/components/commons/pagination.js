@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import Pagination from "react-js-pagination";
+import Pagination from 'react-js-pagination';
 
 
 const PaginationComponent = () => {
   const [totalItemsCount, setTotalItemsCount] = useState(10);
 
   const handlePageChange = (pages) => {
-    console.log(pages)
-    setTotalItemsCount(totalItemsCount + 5)
-  }
+    console.log(pages);
+    setTotalItemsCount(totalItemsCount + 5);
+  };
 
   return (
     <nav className="blog-pagination justify-content-center d-flex">
