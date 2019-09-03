@@ -23,7 +23,6 @@ class ListMomment extends React.Component {
       });
   }
   render() {
-    console.log(2)
     const { moments } = this.state;
     return (
       <div className="blog_left_sidebar">
