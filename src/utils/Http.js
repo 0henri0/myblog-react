@@ -11,10 +11,11 @@ export default class Http {
 
   async  get(url) {
     try {
-      const response = await axios.get( + url);
+      const response = await axios.get(process.env.REACT_APP_URL_API + url);
       return response;
     } catch (error) {
       console.error(error);
     }
   }
+
 }

@@ -49,7 +49,7 @@ class ListImageGallary extends React.Component {
                   }),
                   dialog: base => ({
                     ...base,
-                    maxWidth: "100%",
+                    maxWidth: '100%',
                   }),
                 }}>
                 <Carousel views={images}
