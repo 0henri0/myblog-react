@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { combineReducers } from 'redux';\nimport mommentReducer from '../modules/home/reducers';\nconst rootReducer = combineReducers({\n  momments: mommentReducer\n});\nexport default rootReducer;","map":null,"metadata":{},"sourceType":"module"}

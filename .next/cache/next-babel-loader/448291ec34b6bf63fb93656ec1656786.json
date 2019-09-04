@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Http from '../utils/Http';\nexport default function getMoments() {\n  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;\n  return new Http().authenticated().get(\"home\");\n}","map":null,"metadata":{},"sourceType":"module"}
