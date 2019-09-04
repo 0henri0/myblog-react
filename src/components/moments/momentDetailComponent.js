@@ -1,8 +1,6 @@
-import { Fragment } from 'React';
-
 const MomentDetailComponent = () => {
   return (
-    <Fragment>
+    <>
       <div className="main_blog_details">
         <img className="img-fluid" src="/static/img/blog/news-blog.jpg" alt="" />
         <a href="#"><h4>Cartridge Is Better Than Ever <br /> A Discount Toner</h4></a>
@@ -188,7 +186,7 @@ const MomentDetailComponent = () => {
           <a href="#" className="primary-btn submit_btn">Post Comment</a>
         </form>
       </div>
-    </Fragment>
+    </>
   );
 };
 

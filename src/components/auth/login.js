@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Login = () => {
+const Login = ({ credentials }) => {
   const [state, setState] = useState({
     'email': '',
     'password': ''
@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    credentials(state);
   };
 
   const handleInputChange = (e) => {

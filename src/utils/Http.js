@@ -1,15 +1,11 @@
 import axios from 'axios';
-import systemConfig from './../config/configServer';
 
 const DEFAULT_CONFIG = {
-  baseURL: systemConfig.API_URL,
+  baseURL: process.env.REACT_APP_URL_API,
   headers: {
     'Content-Type': 'application/json',
-    'Accept-Language': localStorage.getItem('i18nextLng') || systemConfig.LOCALE,
     'X-Requested-With': 'XMLHttpRequest',
   },
-  // enable credentials to send cookie to server.
-  //withCredentials: true,
 };
 
 export const statusCode = {
@@ -27,9 +23,9 @@ export default class Http {
   }
 
   authenticated() {
-    const storedData = localStorage.getItem('token'); // get token from localstorage
+    const storedData = localStorage.getItem('access_token'); // get token from localstorage
     if (storedData) {
-      this.config.headers[systemConfig.AUTHORIZATION_HEADER] = storedData;
+      this.config.headers['Authorization'] = 'Bearer ' + storedData;
     }
 
     return this;
@@ -58,19 +54,18 @@ export default class Http {
   executeRequest(url, config) {
     const finalHeaderConfig = { ...this.config.headers, ...config.headers };
     const finalConfig = { ...this.config, url, ...config, headers: { ...finalHeaderConfig } };
-
     return axios
       .request(finalConfig)
       .then(response => {
         return Promise.resolve(response);
       })
       .catch(error => {
+        console.log('error');
         if (error.response && error.response.status === statusCode.UNAUTHORIZED) {
-          if (url !== '/login') {
-            window.location.href = '/login';
+          if (url != 'login') {
+            window.location.href = '/auth/login';
           }
         }
-
         return Promise.reject(error);
       });
   }

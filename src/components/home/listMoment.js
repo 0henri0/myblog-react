@@ -35,5 +35,4 @@ class ListMomment extends React.Component {
   }
 }
 
-
 export default ListMomment;
