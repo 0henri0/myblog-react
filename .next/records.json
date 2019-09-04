@@ -1,0 +1,35 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/_app.js": 2,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/_error.js": 3,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/about.js": 4,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/auth/login.js": 5,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/contact.js": 6,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/imagegallary.js": 7,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/index.js": 8,
+      "static/SHHWJCsdQPY9y_ss5_DIt/pages/moments/[id].js": 9,
+      "static/runtime/main.js": 10
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
