@@ -32,28 +32,57 @@ export default class Http {
   }
 
   get(url, params, config = {}) {
-    return this.executeRequest(url, { ...config, params });
+    return this.executeRequest(url, {
+      ...config,
+      params
+    });
   }
 
   post(url, data, config = {}) {
-    return this.executeRequest(url, { method: 'post', ...config, data });
+    return this.executeRequest(url, {
+      method: 'post',
+      ...config,
+      data
+    });
   }
 
   patch(url, data, config = {}) {
-    return this.executeRequest(url, { method: 'patch', ...config, data });
+    return this.executeRequest(url, {
+      method: 'patch',
+      ...config,
+      data
+    });
   }
 
   put(url, data, config = {}) {
-    return this.executeRequest(url, { method: 'put', ...config, data });
+    return this.executeRequest(url, {
+      method: 'put',
+      ...config,
+      data
+    });
   }
 
   delete(url, data, config = {}) {
-    return this.executeRequest(url, { method: 'delete', ...config, data });
+    return this.executeRequest(url, {
+      method: 'delete',
+      ...config,
+      data
+    });
   }
 
   executeRequest(url, config) {
-    const finalHeaderConfig = { ...this.config.headers, ...config.headers };
-    const finalConfig = { ...this.config, url, ...config, headers: { ...finalHeaderConfig } };
+    const finalHeaderConfig = {
+      ...this.config.headers,
+      ...config.headers
+    };
+    const finalConfig = {
+      ...this.config,
+      url,
+      ...config,
+      headers: {
+        ...finalHeaderConfig
+      }
+    };
     console.log(finalConfig);
     return axios
       .request(finalConfig)

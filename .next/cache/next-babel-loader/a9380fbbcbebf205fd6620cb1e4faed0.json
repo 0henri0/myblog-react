@@ -1,1 +1,0 @@
-{"ast":null,"code":"import Http from '../utils/Http';\nexport default function getMoments(page = 1) {\n  return new Http().authenticated().get(`home`);\n}","map":null,"metadata":{},"sourceType":"module"}

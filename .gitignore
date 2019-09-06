@@ -8,7 +8,7 @@
 
 # nextjs
 
-/src/.next
+.next
 # production
 /build
 

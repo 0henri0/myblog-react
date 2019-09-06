@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var FETCH_MOMENT = 'FETCH_MOMENT';","map":{"version":3,"sources":["/media/thai/CC064FEE064FD7DA/React/myblog-react/modules/home/types.js"],"names":["FETCH_MOMENT"],"mappings":"AAAA,OAAO,IAAMA,YAAY,GAAG,cAArB","sourcesContent":["export const FETCH_MOMENT = 'FETCH_MOMENT';"]},"metadata":{},"sourceType":"module"}
