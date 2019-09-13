@@ -80,7 +80,7 @@
 		bottom: 6px;
 		position: relative;
 	}
-	.navbar-toggler span{
+	/* .navbar-toggler span{
 		display: block;
 		width: 25px;
 		height: 3px;
@@ -89,7 +89,7 @@
 		margin-bottom: 4px;
 		transition: all 400ms linear;
 		cursor: pointer;
-	}
+	} */
     .navbar .container{
         padding-left: 15px;
         padding-right: 15px;
