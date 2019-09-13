@@ -140,7 +140,7 @@ button:focus {
 
 @media (min-width: 1620px) {
   .box_1620 {
-    max-width: 1650px;
+    max-width: 1650px !important;
     margin: auto;
   }
 }
